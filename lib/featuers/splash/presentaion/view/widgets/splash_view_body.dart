@@ -1,5 +1,8 @@
 import 'package:bookly_app/core/utils/assets.dart';
+import 'package:bookly_app/featuers/home/presentaion/view/home_screen.dart';
+import 'package:bookly_app/featuers/splash/presentaion/view/widgets/silde_text.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});
@@ -17,6 +20,17 @@ class _SplashViewBodyState extends State<SplashViewBody>
   void initState() {
     super.initState();
 
+    initSlidAnimation();
+    navigatToHomePage();
+  }
+
+  @override
+  void dispose() {
+    animationController.dispose();
+    super.dispose();
+  }
+
+  void initSlidAnimation() {
     animationController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 1),
@@ -38,16 +52,19 @@ class _SplashViewBodyState extends State<SplashViewBody>
       children: [
         Image.asset(
           AssetsData.logo,
-          height: 300,
+          height: 60,
         ),
-        SlideTransition(
-          position: slideAnimation,
-          child: const Text(
-            textAlign: TextAlign.center,
-            "Read Free books",
-          ),
+        const SizedBox(
+          height: 10,
         ),
+        SlideText(slideAnimation: slideAnimation),
       ],
     );
+  }
+
+  navigatToHomePage() {
+    Future.delayed(const Duration(milliseconds: 2500), () {
+      Get.to(const HomeScreen(), transition: Transition.fadeIn);
+    });
   }
 }
