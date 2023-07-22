@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/assets.dart';
 
-class FeatuerdListItems extends StatelessWidget {
-  const FeatuerdListItems({super.key, required this.index});
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key,  this.index = 0});
   final int index;
   @override
   Widget build(BuildContext context) {

@@ -14,7 +14,7 @@ class FeatuerdList extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           physics: const BouncingScrollPhysics(),
           itemBuilder: (context, index) {
-            return FeatuerdListItems(
+            return CustomBookImage(
               index: index,
             );
           }),
