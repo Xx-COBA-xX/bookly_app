@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'best_seller_list_view_itmes.dart';
+import 'best_seller_list_view.dart';
 import 'build_new_section_title.dart';
 import 'custom_app_bar.dart';
 import 'featuerd_list_view.dart';
@@ -33,20 +33,5 @@ class HomeViewBody extends StatelessWidget {
         ),
       ],
     );
-  }
-}
-
-class BestSellerListView extends StatelessWidget {
-  const BestSellerListView({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-        padding: EdgeInsets.zero,
-        physics: const NeverScrollableScrollPhysics(),
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return const BestSellerViewItems();
-        });
   }
 }

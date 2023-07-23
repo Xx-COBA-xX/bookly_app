@@ -1,3 +1,4 @@
+import 'package:bookly_app/constant.dart';
 import 'package:bookly_app/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -37,19 +38,19 @@ class BestSellerViewItems extends StatelessWidget {
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     SizedBox(
                       width: MediaQuery.of(context).size.width * .5,
-                      child: const Text(
+                      child: Text(
                         "Harry Potter and the Gobble of Fire",
-                        style: Styles.textStyle20,
+                        style: Styles.textStyle20
+                            .copyWith(fontFamily: kGtSectraFine),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 2,
                       ),
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 7,
                     ),
                     const Text(
                       "Gt yong",
@@ -58,15 +59,16 @@ class BestSellerViewItems extends StatelessWidget {
                       maxLines: 2,
                     ),
                     const SizedBox(
-                      height: 5,
+                      height: 10,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Text(
                           "19.99 \$",
-                          style: Styles.textStyle20
-                              .copyWith(fontWeight: FontWeight.bold),
+                          style: Styles.textStyle20.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,
                         ),
