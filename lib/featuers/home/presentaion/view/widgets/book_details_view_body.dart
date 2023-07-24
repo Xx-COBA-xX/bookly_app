@@ -3,7 +3,6 @@ import 'package:bookly_app/featuers/home/presentaion/view/widgets/similar_book_s
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 import 'book_details_section.dart';
 import 'custom_book_details_appbar.dart';
 

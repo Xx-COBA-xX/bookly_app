@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/assets.dart';
 
 class CustomBookImage extends StatelessWidget {
-  const CustomBookImage({super.key,  this.index = 0});
+  const CustomBookImage({super.key, this.index = 0});
   final int index;
   @override
   Widget build(BuildContext context) {

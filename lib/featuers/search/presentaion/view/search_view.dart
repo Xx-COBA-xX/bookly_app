@@ -3,7 +3,6 @@ import 'package:bookly_app/featuers/search/presentaion/view/widgets/custom_searc
 import 'package:bookly_app/featuers/search/presentaion/view/widgets/search_resutl_list_view.dart';
 import 'package:flutter/material.dart';
 
-
 class SearchView extends StatelessWidget {
   const SearchView({super.key});
 

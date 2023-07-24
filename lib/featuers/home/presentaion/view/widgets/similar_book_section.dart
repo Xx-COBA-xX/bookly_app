@@ -10,16 +10,14 @@ class SimilerBookSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  Column(
+    return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
-          padding:const EdgeInsets.symmetric(horizontal: 30),
+          padding: const EdgeInsets.symmetric(horizontal: 30),
           child: Text(
             "You can also like",
-            style: Styles.textStyle14.copyWith(
-              fontWeight: FontWeight.w600
-            ),
+            style: Styles.textStyle14.copyWith(fontWeight: FontWeight.w600),
           ),
         ),
         const SizedBox(

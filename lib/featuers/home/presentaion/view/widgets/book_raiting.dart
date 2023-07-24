@@ -7,7 +7,7 @@ import '../../../../../core/utils/styles.dart';
 class BookRaiting extends StatelessWidget {
   const BookRaiting({
     Key? key,
-     this.mainAxisAlignment = MainAxisAlignment.start,
+    this.mainAxisAlignment = MainAxisAlignment.start,
   }) : super(key: key);
   final MainAxisAlignment mainAxisAlignment;
   @override
