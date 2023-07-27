@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../../core/utils/assets.dart';
 
 class CustomBookImage extends StatelessWidget {
-  const CustomBookImage({super.key, this.index = 0});
+  const CustomBookImage({super.key, this.index = 0, required this.imageUrl});
   final int index;
+  final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return Padding(

@@ -1,3 +1,4 @@
+import 'package:bookly_app/constant.dart';
 import 'package:flutter/material.dart';
 
 import 'featuerd_list_items.dart';
@@ -16,6 +17,7 @@ class SimilerBookListView extends StatelessWidget {
           itemBuilder: (context, index) {
             return CustomBookImage(
               index: index,
+              imageUrl: kImageUrl,
             );
           }),
     );

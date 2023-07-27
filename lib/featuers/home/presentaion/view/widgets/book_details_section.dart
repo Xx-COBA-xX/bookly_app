@@ -1,3 +1,4 @@
+import 'package:bookly_app/constant.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/utils/styles.dart';
@@ -16,7 +17,9 @@ class BookDetailsSection extends StatelessWidget {
       children: [
         Padding(
           padding: EdgeInsets.symmetric(horizontal: width * .24),
-          child: const CustomBookImage(),
+          child: const CustomBookImage(
+            imageUrl: kImageUrl,
+          ),
         ),
         const SizedBox(
           height: 37,
