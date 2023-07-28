@@ -8,8 +8,12 @@ class BookRaiting extends StatelessWidget {
   const BookRaiting({
     Key? key,
     this.mainAxisAlignment = MainAxisAlignment.start,
+    required this.raiting,
+    required this.count,
   }) : super(key: key);
   final MainAxisAlignment mainAxisAlignment;
+  final num raiting;
+  final int count;
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -24,7 +28,7 @@ class BookRaiting extends StatelessWidget {
           width: 3.2,
         ),
         Text(
-          "4.5",
+          raiting.toString(),
           style: Styles.textStyle14.copyWith(fontWeight: FontWeight.bold),
           overflow: TextOverflow.ellipsis,
           maxLines: 2,
@@ -32,10 +36,10 @@ class BookRaiting extends StatelessWidget {
         const SizedBox(
           width: 5,
         ),
-        const Opacity(
+        Opacity(
           opacity: .7,
           child: Text(
-            "(2693)",
+            "($count)",
             style: Styles.textStyle14,
             overflow: TextOverflow.ellipsis,
             maxLines: 2,

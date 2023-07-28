@@ -25,6 +25,9 @@ class HomeViewBody extends StatelessWidget {
               BuildNewSectionTitle(
                 title: "Best Seller",
               ),
+              SizedBox(
+                height: 16,
+              )
             ],
           ),
         ),

@@ -12,7 +12,8 @@ class SearchResultListView extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         itemCount: 10,
         itemBuilder: (context, index) {
-          return const BookViewItem();
+          // return const BookViewItem();
+          return Container();
         });
   }
 }
